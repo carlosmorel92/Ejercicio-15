@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5: Funciones Básicas</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f6f8;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        button {
+            margin: 5px;
+            padding: 8px 12px;
+            border: none;
+            background-color: #3498db;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        #output {
+            margin-top: 20px;
+            padding: 10px;
+            background: white;
+            border-radius: 6px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ejercicio 5: Funciones Básicas</h1>
+
+    <button onclick="mostrarResultado(saludar())">Saludar</button>
+    <button onclick="mostrarResultado(saludarPersona('Ana'))">Saludar Persona</button>
+    <button onclick="mostrarResultado(sumar(5, 3))">Sumar</button>
+    <button onclick="mostrarResultado(crearMensaje('Hola', 3))">Mensaje</button>
+    <button onclick="mostrarResultado(JSON.stringify(crearPersona('Juan', 25, 'Madrid')))">Crear Persona</button>
+    <button onclick="mostrarResultado(JSON.stringify(operacionesMatematicas(10, 2)))">Operaciones</button>
+    <button onclick="mostrarResultado(dividir(10, 0))">Dividir</button>
+    <button onclick="mostrarResultado(calcularTotal(100))">Calcular Total</button>
+    <button onclick="mostrarResultado(incrementarContador())">Incrementar Contador</button>
+    <button onclick="mostrarResultado(JSON.stringify(filtrarPares([1,2,3,4,5])))">Filtrar Pares</button>
+    <button onclick="mostrarResultado(factorial(5))">Factorial</button>
+    <button onclick="mostrarResultado(multiplicar(3,4))">Multiplicar</button>
+    <button onclick="mostrarResultado(sumarTodos(1,2,3,4,5))">Sumar Todos</button>
+    <button onclick="probarMultiplicador()">Multiplicador</button>
+
+    <div id="output"></div>
+
+    <script src="funciones.js"></script>
+</body>
+</html>

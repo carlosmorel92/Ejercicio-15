@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 6: Funciones Avanzadas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f6f8;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        button {
+            margin: 5px;
+            padding: 8px 12px;
+            border: none;
+            background-color: #27ae60;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1e8449;
+        }
+
+        #contenido {
+            margin-top: 20px;
+            padding: 10px;
+            background: white;
+            border-radius: 6px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ejercicio 6: Funciones Avanzadas</h1>
+
+    <button onclick="mostrar(multiplicarPorDos(5))">Multiplicar x2</button>
+    <button onclick="mostrar(cuadrado(4))">Cuadrado</button>
+    <button onclick="mostrar(calcularArea(5,3))">Área</button>
+    <button onclick="mostrar(procesarNumero(5, x => x * 3))">Callback</button>
+    <button onclick="mostrar(JSON.stringify(doblarNumeros([1,2,3])))">Map</button>
+    <button onclick="mostrar(procesarNumeros([1,2,3,4,5,6]))">Encadenamiento</button>
+    <button onclick="probarClosure()">Closure</button>
+
+    <div id="contenido"></div>
+
+    <script src="funciones-avanzadas.js"></script>
+</body>
+</html>
